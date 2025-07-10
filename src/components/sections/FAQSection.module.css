@@ -1,0 +1,169 @@
+.faqSection {
+  background: #1a1a1a;
+  color: white;
+  padding: 6rem 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: flex-start;
+}
+
+.leftContent {
+  position: sticky;
+  top: 2rem;
+}
+
+.headerContent {
+  max-width: 500px;
+}
+
+.mainHeading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #a0a0a0;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+
+.learnMoreButton {
+  background: white;
+  color: #1a1a1a;
+  padding: 0.875rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learnMoreButton:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.2);
+}
+
+.rightContent {
+  padding-top: 1rem;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faqItem {
+  border-bottom: 1px solid #333;
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.faqQuestion:hover {
+  color: #f0f0f0;
+}
+
+.questionNumber {
+  font-weight: 600;
+  min-width: 20px;
+}
+
+.questionText {
+  flex: 1;
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.faqAnswer {
+  padding: 0 0 1.5rem 2rem;
+  animation: slideDown 0.3s ease-out;
+}
+
+.faqAnswer p {
+  color: #a0a0a0;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .leftContent {
+    position: static;
+  }
+
+  .mainHeading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .faqSection {
+    padding: 4rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  .mainHeading {
+    font-size: 2rem;
+  }
+
+  .faqAnswer {
+    padding-left: 1rem;
+  }
+}

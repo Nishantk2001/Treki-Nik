@@ -1,0 +1,148 @@
+.bannerSection {
+  background: #1a1a1a;
+  color: white;
+  padding: 8rem 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  align-items: center;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: white;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cccccc;
+  margin: 0;
+  max-width: 500px;
+}
+
+.learnMoreButton {
+  background: white;
+  color: #1a1a1a;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+}
+
+.learnMoreButton:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+.learnMoreButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .content {
+    gap: 6rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .bannerSection {
+    padding: 6rem 0;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    margin: 0 auto;
+  }
+
+  .rightContent {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .bannerSection {
+    padding: 4rem 0;
+  }
+
+  .content {
+    gap: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .rightContent {
+    gap: 2rem;
+  }
+
+  .learnMoreButton {
+    padding: 0.8rem 2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .learnMoreButton {
+    padding: 0.7rem 1.5rem;
+  }
+}

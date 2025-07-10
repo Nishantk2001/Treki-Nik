@@ -1,0 +1,119 @@
+.homePage {
+  overflow-x: hidden;
+}
+
+/* Hero section spacing adjustment */
+.homePage > section:first-child {
+  margin-top: 70px; /* To account for fixed navbar */
+}
+
+/* Section spacing and styling */
+.section {
+  padding: 80px 0;
+}
+
+.sectionDark {
+  background-color: #f8f9fa;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sectionSubtitle {
+  font-size: 1.2rem;
+  color: #636e72;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+/* Featured Tours section specific styles */
+.featuredTours {
+  position: relative;
+}
+
+.toursGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Popular Destinations specific styles */
+.destinationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Why Choose Us section */
+.whyChooseUs {
+  background-color: #0984e3;
+  color: white;
+}
+
+.whyChooseUs .sectionTitle,
+.whyChooseUs .sectionSubtitle {
+  color: white;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Testimonials section */
+.testimonialsContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonialSlider {
+  position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .toursGrid,
+  .destinationsGrid,
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 40px 0;
+  }
+}

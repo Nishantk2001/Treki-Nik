@@ -1,0 +1,229 @@
+.destinationsSection {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  z-index: -1;
+}
+
+.container {
+  /* max-width: 1400px; */
+  width: 100%;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.destinationCards {
+  display: flex;
+  /* gap: 2rem; */
+  flex-wrap: wrap;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.destinationCard {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  /* border-radius: 16px; */
+  padding: 2rem 3rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  /* text-align: center; */
+  /* min-width: 180px; */
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+
+.destinationCard:hover,
+.destinationCard.active {
+  background: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1);
+  opacity: 1;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.visitLabel {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.destinationName {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: -0.01em;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.viewMoreContainer {
+  position: relative;
+}
+
+.viewMoreButton {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+}
+
+.viewMoreButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.viewMoreButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .destinationCards {
+    gap: 1.5rem;
+  }
+
+  .destinationCard {
+    padding: 1.5rem 2.5rem;
+    min-width: 160px;
+  }
+
+  .destinationName {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .destinationsSection {
+    height: 80vh;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .content {
+    gap: 3rem;
+  }
+
+  .destinationCards {
+    gap: 1rem;
+  }
+
+  .destinationCard {
+    padding: 1.2rem 2rem;
+    min-width: 140px;
+  }
+
+  .destinationName {
+    font-size: 1.4rem;
+  }
+
+  .visitLabel {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .destinationsSection {
+    height: 70vh;
+  }
+
+  .destinationCards {
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+  }
+
+  .destinationCard {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    min-width: auto;
+  }
+
+  .destinationName {
+    font-size: 1.3rem;
+  }
+
+  .viewMoreButton {
+    padding: 0.8rem 2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .destinationsSection {
+    height: 60vh;
+  }
+
+  .content {
+    gap: 2rem;
+  }
+
+  .destinationCard {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .destinationName {
+    font-size: 1.2rem;
+  }
+
+  .viewMoreButton {
+    padding: 0.7rem 1.5rem;
+  }
+}
