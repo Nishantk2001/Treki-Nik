@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   ArrowRight,
   ChevronDown,
@@ -9,11 +9,39 @@ import {
   Users,
 } from "lucide-react";
 import styles from "./Hero.module.css";
+import Img3 from "../../assets/images/img3.jpg";
+import Img2 from "../../assets/images/img2.jpg";
+import Img1 from "../../assets/images/img1.jpg";
 
 const Hero: React.FC = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Array of background images
+  const backgroundImages = [Img3, Img2, Img1];
+
+  // Auto-change background images
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % backgroundImages.length
+      );
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
+
   return (
     <div className={styles.heroContainer}>
-      <div className={styles.backgroundImage}></div>
+      {/* Multiple Background Images */}
+      {backgroundImages.map((image, index) => (
+        <div
+          key={index}
+          className={`${styles.backgroundImage} ${
+            index === currentImageIndex ? styles.active : ""
+          }`}
+          style={{ backgroundImage: `url(${image})` }}
+        />
+      ))}
       <div className={styles.overlay}></div>
 
       {/* Main Content */}
@@ -22,11 +50,11 @@ const Hero: React.FC = () => {
           <div className={styles.heroText}>
             <p className={styles.subtitle}>Feel The Experience</p>
             <h1 className={styles.title}>
-              Explore The
+              Find Yourself
               <br />
-              Majestic Asia
+              Where the Earth
               <br />
-              Landscape Now
+              Touches the Sky.
             </h1>
             <button className={styles.ctaButton}>
               <span>GET STARTED</span>
@@ -82,6 +110,20 @@ const Hero: React.FC = () => {
             <ChevronDown size={20} className={styles.scrollIcon} />
           </div>
         </div>
+
+        {/* Image Indicators */}
+        {/* <div className={styles.imageIndicators}>
+          {backgroundImages.map((_, index) => (
+            <button
+              key={index}
+              className={`${styles.indicator} ${
+                index === currentImageIndex ? styles.indicatorActive : ""
+              }`}
+              onClick={() => setCurrentImageIndex(index)}
+              aria-label={`Switch to image ${index + 1}`}
+            />
+          ))}
+        </div> */}
       </div>
     </div>
   );

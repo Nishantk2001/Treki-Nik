@@ -37,7 +37,7 @@
 }
 
 .container {
-  /* max-width: 1400px; */
+  max-width: 1400px;
   width: 100%;
   padding: 0 2rem;
   position: relative;
@@ -53,23 +53,23 @@
 
 .destinationCards {
   display: flex;
-  /* gap: 2rem; */
+  gap: 2rem;
   flex-wrap: wrap;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 
 .destinationCard {
   position: relative;
   background: rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  /* border-radius: 16px; */
+  border-radius: 16px;
   padding: 2rem 3rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(10px);
-  /* text-align: center; */
-  /* min-width: 180px; */
+  text-align: center;
+  min-width: 180px;
   transform: scale(0.9);
   opacity: 0.7;
 }

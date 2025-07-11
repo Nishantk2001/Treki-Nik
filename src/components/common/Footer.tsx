@@ -120,9 +120,9 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className={styles.bottomBar}>
           <p className={styles.copyright}>
-            Tour & Travel Template Kit by Jegtheme
+            Founder of Treki Nik @Nishant Kumar
           </p>
-          <p className={styles.rights}>Copyright © 2023. All rights reserved</p>
+          <p className={styles.rights}>Copyright © 2025. All rights reserved</p>
         </div>
       </div>
     </footer>

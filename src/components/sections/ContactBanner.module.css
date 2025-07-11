@@ -1,7 +1,7 @@
 .contactBanner {
   position: relative;
   height: 500px;
-  background-image: url("https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=1600&h=800&dpr=1");
+  background-image: url("../../assets/images/Mountain.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
