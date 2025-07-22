@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import styles from "./Navbar.module.css";
+import Logo from "../../assets/images/trekinik.png";
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -60,11 +61,7 @@ const Navbar: React.FC = () => {
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
-          <img
-            src="src\assets\images\trekinik.png"
-            alt="TrekiNik Logo"
-            className={styles.logoImage}
-          />
+          <img src={Logo} alt="TrekiNik Logo" className={styles.logoImage} />
         </Link>
 
         {/* Desktop Navigation */}
