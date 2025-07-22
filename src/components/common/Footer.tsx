@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Instagram, Twitter, Facebook, Mail } from "lucide-react";
 import styles from "./Footer.module.css";
-
+import Logo from "../../assets/images/trekinik.png";
 const Footer: React.FC = () => {
   const [email, setEmail] = useState("");
 
@@ -18,11 +18,7 @@ const Footer: React.FC = () => {
         <div className={styles.footerContent}>
           {/* Brand Section */}
           <div className={styles.brandSection}>
-            <img
-              src="src\assets\images\trekinik.png"
-              alt="TrekiNik Logo"
-              className={styles.logoImage}
-            />
+            <img src={Logo} alt="TrekiNik Logo" className={styles.logoImage} />
             <div className={styles.brandInfo}>
               <p>Green Enclave</p>
               <p>Mohali India</p>

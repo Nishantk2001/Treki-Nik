@@ -1,6 +1,10 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import styles from "./Gallery.module.css";
+import RoseValley from "../../assets/images/RoseVally.jpeg";
+import TriundTrek from "../../assets/images/triund.jpg";
+import YullaKanda from "../../assets/images/yullakanda.jpg";
+import Kheergangatrek from "../../assets/images/kheerganga.jpg";
 
 const Gallery: React.FC = () => {
   const destinations = [
@@ -8,28 +12,28 @@ const Gallery: React.FC = () => {
       id: 1,
       title: "Rose Valley",
       location: "Uttarakhand",
-      image: "src/assets/images/RoseVally.jpeg",
+      image: RoseValley,
       size: "large",
     },
     {
       id: 2,
       title: "Triund Trek",
       location: "Dharamshala, Kangra",
-      image: "src/assets/images/triund.jpg",
+      image: TriundTrek,
       size: "medium",
     },
     {
       id: 3,
       title: "Yulla Kanda",
       location: "Kinnaur",
-      image: "src/assets/images/yullakanda.jpg",
+      image: YullaKanda,
       size: "medium",
     },
     {
       id: 4,
       title: "Kheerganga trek",
       location: "Kullu",
-      image: "src/assets/images/kheerganga.jpg",
+      image: Kheergangatrek,
       size: "wide",
     },
   ];
