@@ -14,34 +14,34 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
-    title: "Tropical Bliss: Rejuvenate in Asia's Idyllic Beaches",
+    title: "Bhrigu Lake Trek: A High-Altitude Gem in Himachal",
     excerpt:
-      "Discover pristine beaches and crystal-clear waters across Asia's most beautiful coastal destinations.",
+      "Nestled above Manali, the Bhrigu Lake trek offers panoramic views of the Pir Panjal range and a glacial lake steeped in mythology.",
     image:
-      "https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
+      "https://images.pexels.com/photos/1619568/pexels-photo-1619568.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
     featured: true,
   },
   {
     id: 2,
-    title: "Asia's Thrilling Adventures: Hiking, Trekking, and More",
+    title: "Hiking the Hampta Pass: A Gateway to Himachal's Hidden Valleys",
     excerpt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo...",
+      "Journey through alpine meadows, glacial valleys, and dramatic mountain passes on one of Himachal’s most scenic treks.",
     image:
       "https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&dpr=1",
   },
   {
     id: 3,
-    title: "Unforgettable Experiences: Asia's Must-Visit Destinations",
+    title: "Trek to Triund: The Beginner’s Paradise in the Dhauladhar Range",
     excerpt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo...",
+      "Perfect for first-time trekkers, Triund offers panoramic views of the Dhauladhar peaks and a peaceful escape above McLeod Ganj.",
     image:
       "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&dpr=1",
   },
   {
     id: 4,
-    title: "Asia for the Soul: Discover Spiritual Retreats and Practices",
+    title: "Spiti Valley Treks: Explore the Cold Desert of Himachal",
     excerpt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo...",
+      "Experience the stark beauty of Spiti with high-altitude treks, ancient monasteries, and soul-stirring landscapes.",
     image:
       "https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&dpr=1",
   },

@@ -17,9 +17,10 @@ const DiscoverBanner: React.FC = () => {
 
           <div className={styles.rightContent}>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes.
+              From the misty forests of Jibhi to the rugged trails of Spiti,
+              experience Himachal like never before. Our treks connect you with
+              local traditions, mountain serenity, and unforgettable memories —
+              one trail at a time.
             </p>
 
             <button className={styles.learnMoreButton}>LEARN MORE</button>

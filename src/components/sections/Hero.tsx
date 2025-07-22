@@ -7,6 +7,7 @@ import {
   Instagram,
   MapPin,
   Users,
+  Mountain,
 } from "lucide-react";
 import styles from "./Hero.module.css";
 import Img3 from "../../assets/images/img3.jpg";
@@ -70,8 +71,8 @@ const Hero: React.FC = () => {
               </div>
               <div className={styles.cardContent}>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean commodo ligula.
+                  Trek through serene pine forests, river valleys, and
+                  snow-capped paths across Himachal’s hidden gems.
                 </p>
               </div>
             </div>
@@ -82,8 +83,19 @@ const Hero: React.FC = () => {
               </div>
               <div className={styles.cardContent}>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean commodo ligula.
+                  Connect with like-minded adventurers and share the journey,
+                  stories, and starlit campsites together.
+                </p>
+              </div>
+            </div>
+            <div className={styles.infoCard}>
+              <div className={styles.iconWrapper}>
+                <Mountain size={20} />
+              </div>
+              <div className={styles.cardContent}>
+                <p>
+                  We guide, you hike. Just bring your passion—we’ll handle
+                  routes, safety, and local insights.
                 </p>
               </div>
             </div>

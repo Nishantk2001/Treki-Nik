@@ -23,14 +23,18 @@
 .brandSection {
   max-width: 300px;
 }
-
-.brandName {
+.logoImage {
+  height: 60px;
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+/* .brandName {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: white;
   font-family: serif;
-}
+} */
 
 .brandInfo {
   margin-bottom: 2rem;

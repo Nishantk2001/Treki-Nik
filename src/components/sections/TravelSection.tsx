@@ -9,10 +9,7 @@ const TravelSection: React.FC = () => {
         {/* Left side - Large landscape image */}
         <div className={styles.leftContent}>
           <div className={styles.heroImage}>
-            <img
-              src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1"
-              alt="Beautiful mountain landscape with turquoise waters"
-            />
+            <img src="src/assets/images/ladakh.jpg" alt="Ladakh" />
           </div>
         </div>
 
@@ -21,16 +18,16 @@ const TravelSection: React.FC = () => {
           {/* Header content */}
           <div className={styles.headerSection}>
             <h1 className={styles.mainHeading}>
-              Begin Your New Life Experience With Exploring New Destination
+              Discover Hidden Gems and Create Unforgettable Memories
             </h1>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes.
+              Whether you're seeking adventure, culture, or relaxation — our
+              handpicked destinations offer something for every traveler. Embark
+              on journeys that transform and inspire.
             </p>
             <div className={styles.buttonGroup}>
               <button className={styles.primaryButton}>ABOUT US</button>
-              <button className={styles.secondaryButton}>EXPLORE TRIP</button>
+              <button className={styles.secondaryButton}>EXPLORE TRIPS</button>
             </div>
           </div>
 
@@ -39,16 +36,16 @@ const TravelSection: React.FC = () => {
             {/* Top card - Hotel/Couple */}
             <div className={styles.topCard}>
               <img
-                src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&dpr=1"
-                alt="Luxury Hotel Experience"
+                src="src/assets/images/rosevalley.jpg"
+                alt="Rose Valley, Uttarakhand, India"
               />
             </div>
 
             {/* Bottom left - Temple */}
             <div className={styles.bottomLeftCard}>
               <img
-                src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
-                alt="Ancient Temples"
+                src="src/assets/images/Holiday.jpg"
+                alt="Historic temple in Southeast Asia"
               />
             </div>
 
@@ -57,10 +54,10 @@ const TravelSection: React.FC = () => {
               <div className={styles.iconWrapper}>
                 <Camera size={24} />
               </div>
-              <h3>Variation Of Asian Travel Trip</h3>
+              <h3>Explore Asia’s Cultural Wonders</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing ligula eget
-                dolor.
+                From ancient temples to bustling street markets — capture every
+                moment and feel the heartbeat of vibrant cultures.
               </p>
             </div>
           </div>

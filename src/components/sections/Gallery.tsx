@@ -6,34 +6,30 @@ const Gallery: React.FC = () => {
   const destinations = [
     {
       id: 1,
-      title: "Kelingking Beach",
-      location: "Nusa Penida, Bali",
-      image:
-        "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop",
+      title: "Rose Valley",
+      location: "Uttarakhand",
+      image: "src/assets/images/RoseVally.jpeg",
       size: "large",
     },
     {
       id: 2,
-      title: "Grand Palace",
-      location: "Bangkok, Thailand",
-      image:
-        "https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      title: "Triund Trek",
+      location: "Dharamshala, Kangra",
+      image: "src/assets/images/triund.jpg",
       size: "medium",
     },
     {
       id: 3,
-      title: "Cappadocia",
-      location: "Turkey",
-      image:
-        "https://images.pexels.com/photos/2467558/pexels-photo-2467558.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      title: "Yulla Kanda",
+      location: "Kinnaur",
+      image: "src/assets/images/yullakanda.jpg",
       size: "medium",
     },
     {
       id: 4,
-      title: "Padar Island",
-      location: "East Nusa Tenggara",
-      image:
-        "https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      title: "Kheerganga trek",
+      location: "Kullu",
+      image: "src/assets/images/kheerganga.jpg",
       size: "wide",
     },
   ];

@@ -1,5 +1,5 @@
 import React from "react";
-import { Shield, DollarSign, Home, Play } from "lucide-react";
+import { Shield, Home, Play, Wallet } from "lucide-react";
 import styles from "./Experience.module.css";
 
 const Experience: React.FC = () => {
@@ -8,19 +8,19 @@ const Experience: React.FC = () => {
       icon: Shield,
       title: "Safe Traveling",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "Your safety is our top priority. All our treks are led by trained local guides, equipped with essential gear, and supported by reliable logistics for a smooth experience on every trail.",
     },
     {
-      icon: DollarSign,
+      icon: Wallet,
       title: "Affordable Price",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "We believe adventure should be accessible. Our curated treks offer the best value — without compromising on quality or comfort — so you can focus on the journey, not the budget.",
     },
     {
       icon: Home,
       title: "Comfort Accommodation",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",
+        "Stay in cozy homestays, well-equipped campsites, or scenic guesthouses. Our accommodations blend local charm with basic comfort — perfect for a restful night after a day of adventure.",
     },
   ];
 
@@ -37,10 +37,10 @@ const Experience: React.FC = () => {
                 New Adventure
               </h2>
               <p className={styles.description}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Donec quam felis.
+                Step beyond the usual and discover Himachal's raw, untouched
+                beauty. Whether you're chasing snow-capped peaks or walking
+                through lush alpine forests, Treki Nik helps you live the thrill
+                — safely and authentically.
               </p>
             </div>
 
@@ -65,7 +65,7 @@ const Experience: React.FC = () => {
           <div className={styles.rightContent}>
             <div className={styles.mainImageWrapper}>
               <img
-                src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                src="src/assets/images/holiday.jpg"
                 alt="Rice terraces landscape"
                 className={styles.mainImage}
               />

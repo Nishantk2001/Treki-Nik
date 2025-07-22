@@ -185,6 +185,18 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
   cursor: pointer;
+
+  /* Add scroll-related styles */
+  max-height: 220px; /* or any fixed height you prefer */
+  overflow-y: auto;
+
+  /* Hide scrollbar (cross-browser) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.bottomRightCard::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .bottomRightCard:hover {

@@ -6,50 +6,50 @@ const Testimonials: React.FC = () => {
     {
       id: 1,
       name: "Louna Daniel",
-      designation: "Designation",
+      designation: "Solo Traveler",
       avatar:
         "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=face",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      text: "Treki Nik helped me discover trails I never imagined existed. Trekking through Tirthan Valley was not just a trip — it was a soul-refreshing experience. I’ll definitely be back for more!",
     },
     {
       id: 2,
       name: "Joe Marshall",
-      designation: "Designation",
+      designation: "Adventure Photographer",
       avatar:
         "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=face",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      text: "Every frame I captured felt like a postcard. The guides knew every viewpoint, every hidden waterfall. Treki Nik is a goldmine for creators and adventurers alike!",
     },
     {
       id: 3,
       name: "Luna Muller",
-      designation: "Designation",
+      designation: "Backpacking Enthusiast",
       avatar:
         "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=face",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      text: "Hiking the Great Himalayan trails with Treki Nik gave me more than mountains — it gave me memories, meaningful connections, and a renewed love for India’s raw beauty.",
     },
     {
       id: 4,
-      name: "Roy Franklin",
-      designation: "Designation",
+      name: "Akashay Jaggi",
+      designation: "Travel Blogger",
       avatar:
         "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=face",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      text: "What stood out was the warmth of the locals, the seamless planning, and the feeling of belonging. Treki Nik made Himachal feel like home.",
     },
     {
       id: 5,
       name: "Sarah Chen",
-      designation: "Designation",
+      designation: "Nature Lover",
       avatar:
         "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=face",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      text: "I joined the trek as a solo participant and left with new friends and unforgettable views. From the pine forests to stargazing camps — every second was magical!",
     },
     {
       id: 6,
       name: "Michael Torres",
-      designation: "Designation",
+      designation: "First-Time Trekker",
       avatar:
         "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=face",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      text: "This was my first trek ever, and Treki Nik made it so comfortable and exciting. I was nervous, but the support team and fellow trekkers made it an adventure of a lifetime.",
     },
   ];
 

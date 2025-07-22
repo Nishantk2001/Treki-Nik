@@ -8,14 +8,15 @@ const ContactBanner: React.FC = () => {
         <div className={styles.container}>
           <div className={styles.content}>
             <h2 className={styles.heading}>
-              Get Closer With Us &<br />
-              Get Special Promo
+              Plan Your Next Asia <br />
+              Escape with Treki Nik
             </h2>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa.
+              Discover stunning beaches, vibrant cities, and peaceful retreats
+              across Asia. Reach out now and unlock special travel offers
+              curated just for you.
             </p>
-            <button className={styles.contactButton}>CONTACT US</button>
+            <button className={styles.contactButton}>LET’S TALK TRAVEL</button>
           </div>
         </div>
       </div>

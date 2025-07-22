@@ -60,7 +60,11 @@ const Navbar: React.FC = () => {
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
-          Treki Nik
+          <img
+            src="src\assets\images\trekinik.png"
+            alt="TrekiNik Logo"
+            className={styles.logoImage}
+          />
         </Link>
 
         {/* Desktop Navigation */}

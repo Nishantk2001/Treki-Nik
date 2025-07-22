@@ -11,39 +11,39 @@ interface FAQItem {
 const faqData: FAQItem[] = [
   {
     id: 1,
-    question: "What to prepare trip to Asia",
+    question: "What should I prepare before a trip to Asia?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "Before traveling to Asia, research your destination, check travel advisories, book your flights and accommodation, and prepare a packing list based on the weather and activities planned.",
   },
   {
     id: 2,
-    question: "What document you need before go to asia",
+    question: "What documents do I need before traveling to Asia?",
     answer:
-      "You'll need a valid passport, visa (depending on your destination), travel insurance, vaccination certificates, and copies of important documents. Make sure your passport has at least 6 months validity remaining.",
+      "You’ll typically need a valid passport (with at least 6 months’ validity), a visa (if required), travel insurance, vaccination certificates, and printed/digital copies of essential documents.",
   },
   {
     id: 3,
-    question: "How to scheduling Asia trip itinerary",
+    question: "How can I plan an Asia trip itinerary?",
     answer:
-      "Start by choosing your destinations, research the best time to visit, book flights and accommodations in advance, plan your daily activities, and leave some flexibility for spontaneous experiences.",
+      "Start by listing must-visit places, estimate how many days you'll spend in each location, plan key activities, and balance sightseeing with rest. Use travel apps or blogs to create a practical route.",
   },
   {
     id: 4,
-    question: "8 Website must read before your trip",
+    question: "Which websites should I visit before my trip?",
     answer:
-      "Essential websites include official tourism boards, travel advisories, weather forecasts, local transportation guides, cultural etiquette resources, currency exchange rates, and travel forums for insider tips.",
+      "Check official tourism websites, visa and entry requirement pages, travel advisories, Google Maps, TripAdvisor, Rome2Rio, XE for currency exchange, and weather forecast sites like AccuWeather.",
   },
   {
     id: 5,
-    question: "This is the best budget you need to prepare",
+    question: "How much budget should I plan for?",
     answer:
-      "Budget varies by destination and travel style. Generally, plan for accommodation, meals, transportation, activities, shopping, and emergency funds. Research local costs and add 20% buffer for unexpected expenses.",
+      "Budget depends on country and travel style. For budget travel, estimate $30–$60/day. Mid-range travelers might spend $70–$150/day. Don’t forget to include flights, insurance, and a 10–20% buffer.",
   },
   {
     id: 6,
-    question: "This site give you the information about travel to Asia",
+    question: "Where can I find trusted information about traveling to Asia?",
     answer:
-      "Our comprehensive travel guide provides detailed information about destinations, cultural insights, practical tips, safety guidelines, and authentic local experiences to make your Asian adventure unforgettable.",
+      "You can find helpful information right here! Our travel guide covers destinations, safety tips, cultural norms, visa requirements, food guides, and packing checklists to make your trip smooth and memorable.",
   },
 ];
 

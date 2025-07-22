@@ -18,7 +18,11 @@ const Footer: React.FC = () => {
         <div className={styles.footerContent}>
           {/* Brand Section */}
           <div className={styles.brandSection}>
-            <h3 className={styles.brandName}>Treki Nik</h3>
+            <img
+              src="src\assets\images\trekinik.png"
+              alt="TrekiNik Logo"
+              className={styles.logoImage}
+            />
             <div className={styles.brandInfo}>
               <p>Green Enclave</p>
               <p>Mohali India</p>
