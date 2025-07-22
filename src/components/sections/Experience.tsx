@@ -1,6 +1,7 @@
 import React from "react";
 import { Shield, Home, Play, Wallet } from "lucide-react";
 import styles from "./Experience.module.css";
+import ExperienceImg from "../../assets/images/Holiday.jpg";
 
 const Experience: React.FC = () => {
   const features = [
@@ -65,7 +66,7 @@ const Experience: React.FC = () => {
           <div className={styles.rightContent}>
             <div className={styles.mainImageWrapper}>
               <img
-                src="src/assets/images/holiday.jpg"
+                src={ExperienceImg}
                 alt="Rice terraces landscape"
                 className={styles.mainImage}
               />
