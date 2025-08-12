@@ -10,12 +10,14 @@ import TravelSection from "../components/sections/TravelSection";
 import FAQSection from "../components/sections/FAQSection";
 import BlogSection from "../components/sections/BlogSection";
 import ContactBanner from "../components/sections/ContactBanner";
+import UpcomingTripBanner from "../components/sections/UpcomingTripBanner";
 
 const HomePage: React.FC = () => {
   return (
     <div className={styles.homePage}>
       <Hero />
       <Gallery />
+      <UpcomingTripBanner />
       <Experience />
       <DiscoverBanner />
       <Destinations />

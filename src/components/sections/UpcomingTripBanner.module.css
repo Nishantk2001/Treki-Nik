@@ -1,0 +1,273 @@
+.banner {
+  background: linear-gradient(135deg, #2d2e30 0%, #1f2020 50%);
+  color: white;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1920&h=400&fit=crop")
+    center/cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.imageSection {
+  flex: 0 0 300px;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.tripImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tripImage:hover {
+  transform: scale(1.05);
+}
+
+.contentSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  flex: 1;
+}
+
+.tripInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.badge {
+  background: #ed7f08;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+.destination {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.location {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 400;
+}
+
+.details {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.8;
+}
+
+.joinButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.3);
+  width: fit-content;
+}
+
+.joinButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
+}
+
+.buttonIcon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.joinButton:hover .buttonIcon {
+  transform: translateX(2px);
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  background: rgba(249, 115, 22, 0.9);
+  padding: 20px 24px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.countdownItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.countdownNumber {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.countdownLabel {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .imageSection {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+  }
+
+  .contentSection {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .details {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .imageSection {
+    height: 200px;
+  }
+
+  .destination {
+    font-size: 1.5rem;
+  }
+
+  .details {
+    gap: 16px;
+  }
+
+  .detail {
+    font-size: 0.85rem;
+  }
+
+  .joinButton {
+    width: auto;
+    justify-content: center;
+    min-width: 200px;
+  }
+
+  .countdownNumber {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 30px 0;
+  }
+
+  .imageSection {
+    height: 180px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .destination {
+    font-size: 1.3rem;
+  }
+
+  .joinButton {
+    width: 100%;
+    max-width: 250px;
+  }
+}

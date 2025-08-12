@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* CTA Button */}
-        <button className={styles.ctaButton}>GET STARTED →</button>
+        <Link to="/contact" className={styles.ctaButton}>GET STARTED →</Link>
 
         {/* Mobile Menu Button */}
         <button
@@ -204,7 +204,7 @@ const Navbar: React.FC = () => {
           </Link>
 
           {/* Mobile CTA Button */}
-          <button className={styles.mobileCTAButton}>GET STARTED →</button>
+          <Link to="/contact" className={styles.mobileCTAButton} onClick={closeMobileMenu}>GET STARTED →</Link>
         </div>
       </div>
     </nav>

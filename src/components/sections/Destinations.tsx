@@ -1,39 +1,39 @@
 import React, { useState } from "react";
 import styles from "./Destinations.module.css";
+import HamptaPass from "../../assets/images/hamptapass.webp";
+import RoseValley from "../../assets/images/rosevalley.jpg";
+import Triund from "../../assets/images/triund.jpg";
+import Kareri from "../../assets/images/Kareri-Lake.jpg";
+import Yulla from "../../assets/images/yullakanda.jpg";
 
 const Destinations: React.FC = () => {
-  const [activeDestination, setActiveDestination] = useState("japan");
+  const [activeDestination, setActiveDestination] = useState("Kullu");
 
   const destinations = [
     {
-      id: "indonesia",
-      name: "Indonesia",
-      backgroundImage:
-        "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      id: "Kullu",
+      name: "Hampta Pass",
+      backgroundImage: HamptaPass,
     },
     {
-      id: "thailand",
-      name: "Thailand",
-      backgroundImage:
-        "https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      id: "Dharamshala",
+      name: "Kareri Lake",
+      backgroundImage: Kareri,
     },
     {
-      id: "turkey",
-      name: "Turkey",
-      backgroundImage:
-        "https://images.pexels.com/photos/2467558/pexels-photo-2467558.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      id: "Kinnuar",
+      name: "Yulla Kanda",
+      backgroundImage: Yulla,
     },
     {
-      id: "japan",
-      name: "Japan",
-      backgroundImage:
-        "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      id: "Uttarakhand",
+      name: "Rose Valley",
+      backgroundImage: RoseValley,
     },
     {
-      id: "singapore",
-      name: "Singapore",
-      backgroundImage:
-        "https://images.pexels.com/photos/1486222/pexels-photo-1486222.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      id: "Dharamshala1",
+      name: "Triund Trek",
+      backgroundImage: Triund,
     },
   ];
 
@@ -72,7 +72,7 @@ const Destinations: React.FC = () => {
 
           {/* View More Button */}
           <div className={styles.viewMoreContainer}>
-            <button className={styles.viewMoreButton}>VIEW MORE</button>
+            {/* <button className={styles.viewMoreButton}>VIEW MORE</button> */}
           </div>
         </div>
       </div>

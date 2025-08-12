@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           <div className={styles.brandSection}>
             <img src={Logo} alt="TrekiNik Logo" className={styles.logoImage} />
             <div className={styles.brandInfo}>
-              <p>Green Enclave</p>
+              <p>Treki Nik, Chandigarh India</p>
               <p>Mohali India</p>
               <p>160055</p>
             </div>
