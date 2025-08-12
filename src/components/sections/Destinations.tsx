@@ -72,7 +72,7 @@ const Destinations: React.FC = () => {
 
           {/* View More Button */}
           <div className={styles.viewMoreContainer}>
-            {/* <button className={styles.viewMoreButton}>VIEW MORE</button> */}
+            <button className={styles.viewMoreButton}>VIEW MORE</button>
           </div>
         </div>
       </div>
